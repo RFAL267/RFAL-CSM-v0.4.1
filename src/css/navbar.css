@@ -1,0 +1,32 @@
+/* navbar.css */
+.main_navbar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    background: #0001;
+    border-top: 1px solid #fff1;
+    padding: 7px 30px;
+    justify-content: space-around;
+    backdrop-filter: blur(100px);
+    z-index: 999;
+}
+.main_navbar button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--fcolor_1);
+    font-size: 11px;
+    padding: 0 15px;
+}
+.main_navbar button svg{
+    color: var(--fcolor_1);
+}
+
+.main_navbar .active_nav,
+.main_navbar .active_nav *{
+    color: var(--white);
+}

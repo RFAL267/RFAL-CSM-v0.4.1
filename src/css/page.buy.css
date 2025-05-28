@@ -1,0 +1,72 @@
+/* page.buy.css */
+
+.page_buy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+}
+
+.page_buy .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 0;
+}
+.page_buy .header .IconCoin{
+    width: 100px;
+}
+.page_buy .header .gr{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+    width: 100%;
+}
+.page_buy .header P{
+    font-size: 44px;
+    font-weight: 600;
+}
+.page_buy .header article{
+    font-size: 15px;
+}
+.page_buy .packs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.page_buy .packs .pack{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg1);
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.page_buy .packs .pack .coins{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.page_buy .packs .pack .coins .IconCoin{
+    width: 25px;
+}
+.page_buy .packs .pack .price{
+    color: var(--fcolor_1);
+}
+.page_buy .info_text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: var(--fcolor_1);
+    font-size: 12px;
+}
+.page_buy .info_text span{
+    color: var(--y1);
+}

@@ -1,0 +1,96 @@
+/* page.rating.css */
+
+.page_rating{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.page_rating .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+.page_rating .container .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.page_rating .container .header p{
+    font-size: 36px;
+    font-weight: 700;
+}
+.page_rating .container .header span{
+    font-size: 16px;
+    color: #fffa;
+    text-align: center;
+}
+.page_rating .container .rating{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page_rating .container .rating .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(-90deg, var(--cs-bg), var(--bg1));
+    padding: 4px;
+    border-radius: 12px;
+}
+.page_rating .container .rating .row .gr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.page_rating .container .rating .row .gr .rating_num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    min-width: 50px;
+    background: #fff1;
+    padding: 10px;
+    border-radius: 12px;
+}
+.page_rating .container .rating .row .score{
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.page_rating .container .rating .row .score .items_count{
+    font-size: 12px;
+    color: #fff9;
+    font-weight: 700;
+}
+.page_rating .container .rating .row .score .total_score{
+    font-weight: 700;
+}
+#rank-1 *,
+#rank-2 *, 
+#rank-3 *{
+    color: #111;
+}
+#rank-1 .rating_num,
+#rank-2 .rating_num, 
+#rank-3 .rating_num{
+    background: #0002;
+}
+#rank-1{
+    background: #FFBD00;
+    box-shadow: 0 0 50px #FFBD0070;
+}
+#rank-2{
+    background: #cccccc;
+}
+#rank-3{
+    background: #a37c55;
+}

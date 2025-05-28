@@ -1,0 +1,203 @@
+/* page.main.css */
+.page_main {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    padding-bottom: 100px;
+    gap: 16px;
+}
+
+.page_main .coin_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.page_main .coin_info .tapme{
+    display: block;
+    position: absolute;
+    right: 50%;
+    transform: translateX(calc(100% + 70px));
+    top: 80px;
+}
+.page_main .coin_info .coin_btn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid var(--y1);
+}
+.page_main .coin_info .coin_btn::before,
+.page_main .coin_info .coin_btn::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--y1);
+    border-radius: 50%;
+    animation: coin-pulse 3s infinite linear;
+    z-index: 0;
+}
+.page_main .coin_info .coin_btn::before{
+    animation-delay: 1s;
+}
+@keyframes coin-pulse {
+    0%{
+        transform: translateY(-50%) scale(1);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-50%) scale(7);
+        opacity: 0;
+    }
+}
+.page_main .coin_info .coin_btn:active{
+    box-shadow: 0 0 100px var(--y1);
+}
+.page_main .coin_info .IconCoin{
+    display: block;
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1/1;
+    position: relative;
+    z-index: 10;
+    animation: coin-anim 2s infinite linear;
+}
+
+
+.page_main .coin_info p{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+.page_main .coin_info article{
+    font-size: 18px;
+    text-align: center;
+    color: var(--white);
+    opacity: 0.8;
+    position: relative;
+}
+
+/* balance */
+
+.page_main .balance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: var(--bg1);
+    border-radius: 10px;
+    padding: 16px;
+    position: relative;
+}
+.page_main .balance .counter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.page_main .balance .counter .IconCoin{
+    width: 40px;
+}
+.page_main .balance .counter span{
+    font-size: 44px;
+    font-weight: 500;
+}
+.page_main .balance p{
+    font-size: 15px;
+    color: var(--fcolor_1);
+}
+
+.page_main .balance_btn{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 14px;
+    align-items: center;
+    justify-content: center;
+    background: var(--y1);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 12px;
+    color: var(--black);
+    margin-top: 16px;
+}
+
+.page_main .tasks{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    gap: 5px;
+}
+.page_main .tasks > p{
+    font-size: 14px;
+    color: var(--fcolor_1);
+    padding: 5px 10px;
+}
+.page_main .tasks .list{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.page_main .tasks .task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--bg1);
+    gap: 10px;
+}
+.page_main .tasks .task .content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.page_main .tasks .task .content .IconCoin{
+    width: 14px;
+}
+.page_main .tasks .task p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.page_main .tasks .task .prize{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: var(--fcolor_1);
+}
+/* btn */
+
+.page_main .tasks .task .btn{
+    display: block;
+    width: auto;
+    font-size: 16px;
+    font-weight: 500;
+    height: auto;
+    color: var(--black);
+    background: var(--y1);
+    padding: 4px 10px;
+    white-space: nowrap;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+
+.page_main .tasks .task .complete{
+    color: var(--y1);
+    padding: 4px 10px;
+}
