@@ -1,6 +1,6 @@
 // pages/purchase.success.jsx
 import "../css/page.rating.css";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/navbar"
 import { useEffect, useState } from "react";
 
 const mockData = [
